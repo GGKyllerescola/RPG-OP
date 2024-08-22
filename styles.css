@@ -98,13 +98,10 @@ textarea {
     flex: 1;
     padding: 20px;
     display: flex;
-    justify-content: center;
-}
-
-#characters-container {
-    display: flex;
     flex-wrap: wrap; /* Permite que os cards de personagens quebrem para a linha de baixo */
+    justify-content: flex-start; /* Alinha os personagens ao início */
     gap: 20px; /* Espaçamento entre os cards de personagens */
+    overflow-y: auto;
 }
 
 /* Estilo dos Personagens */
@@ -113,7 +110,8 @@ textarea {
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
-    width: 250px;
+    width: 100%;
+    max-width: 250px; /* Controla a largura dos cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
     transition: transform 0.3s ease;
@@ -203,33 +201,39 @@ footer {
 #characterModal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
 }
 
 #characterForm {
-    background-color: #1e1e1e;
+    background-color: #1e1e1e; /* Fundo escuro para o formulário */
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
     width: 100%;
+    text-align: center;
+}
+
+#characterForm h2 {
+    margin: 0 0 20px;
 }
 
 #characterForm input {
-    width: 100%;
+    width: calc(100% - 22px);
     padding: 10px;
+    margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #333;
     background-color: #2a2a2a;
     color: #fff;
-    margin-bottom: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #characterForm button {
@@ -241,14 +245,9 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 5px;
 }
 
 #characterForm button:hover {
     background-color: #357ABD;
-}
-
-.buttons-container {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
 }
