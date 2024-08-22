@@ -101,7 +101,6 @@ textarea {
     flex-wrap: wrap; /* Permite que os cards de personagens quebrem para a linha de baixo */
     justify-content: flex-start; /* Alinha os personagens ao início */
     gap: 20px; /* Espaçamento entre os cards de personagens */
-    overflow-y: auto;
 }
 
 /* Estilo dos Personagens */
