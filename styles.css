@@ -222,32 +222,6 @@ footer {
 }
 
 #characterForm h2 {
-    margin: 0 0 20px;
-}
-
-#characterForm input {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #333;
-    background-color: #2a2a2a;
-    color: #fff;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#characterForm button {
-    padding: 10px 20px;
-    background-color: #4A90E2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 5px;
-}
-
-#characterForm button:hover {
-    background-color: #357ABD;
+    margin-bottom: 20px;
+    color: #4A90E2;
 }
